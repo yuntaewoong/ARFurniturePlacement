@@ -227,8 +227,8 @@ GameObject:
   m_Component:
   - component: {fileID: 656880748}
   - component: {fileID: 656880747}
-  - component: {fileID: 656880746}
   - component: {fileID: 656880749}
+  - component: {fileID: 656880746}
   m_Layer: 0
   m_Name: AR Session
   m_TagString: Untagged
@@ -287,9 +287,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 656880745}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17458dd5b67e80b47b96e17fe708608c, type: 3}
+  m_Script: {fileID: 11500000, guid: e0cb9aa70a22847b5925ee5f067c10a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Camera: {fileID: 0}
+  m_OriginBaseGameObject: {fileID: 656880745}
+  m_CameraFloorOffsetObject: {fileID: 0}
+  m_RequestedTrackingOriginMode: 0
+  m_CameraYOffset: 1.1176
 --- !u!1 &1354141925
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +442,7 @@ GameObject:
   - component: {fileID: 1659859599}
   - component: {fileID: 1659859601}
   - component: {fileID: 1659859600}
+  - component: {fileID: 1659859602}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -492,6 +498,19 @@ MonoBehaviour:
   m_CameraFloorOffsetObject: {fileID: 1659859597}
   m_RequestedTrackingOriginMode: 0
   m_CameraYOffset: 1.1176
+--- !u!114 &1659859602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659859597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RaycastPrefab: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
