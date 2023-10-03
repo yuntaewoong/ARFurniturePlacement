@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.ARFoundation;
 
 public class FurnitureLocator : MonoBehaviour
 {
@@ -28,7 +29,8 @@ public class FurnitureLocator : MonoBehaviour
     {
         Vector3 furniturePosition = LocationIndicator.GetIndicatorPosition();
         Quaternion furnitureRotation = LocationIndicator.GetIndicatorRotation();
-        Instantiate(Furnitures[CurrentFurnitureIndex], furniturePosition, furnitureRotation);//배치하기
+        GameObject furniture = Instantiate(Furnitures[CurrentFurnitureIndex], furniturePosition, furnitureRotation);//배치하기
+        furniture.AddComponent<ARAnchor>();
     }
 
 }
