@@ -597,29 +597,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &416387408626368583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1862624285412508587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a30ecfcda539674fa5a524c22e72160, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blasterPrefab: {fileID: 9012691396450176835, guid: 35fd193f93c13b54497f5022a72245e5, type: 3}
-  blasterPreviewPrefab: {fileID: 1137575379940210661, guid: eef10f943ce4d234c846feb038e8c2f9, type: 3}
-  meshLayerMask:
-    serializedVersion: 2
-    m_Bits: 64
-  leftHand: {fileID: 818654676}
-  rightHand: {fileID: 1971351427}
-  trackingRadius: 5
-  placeDownSFX: {fileID: 2091660272685169092}
-  pickUpSFX: {fileID: 4645121620484439493}
-  debugDraw: 1
 --- !u!114 &1669035483818989012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -645,7 +622,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8158868008590715964}
-  - component: {fileID: 416387408626368583}
+  - component: {fileID: 8158868008590715965}
   m_Layer: 0
   m_Name: EctoBlasterDemoSpawner
   m_TagString: Untagged
@@ -971,6 +948,29 @@ Transform:
   - {fileID: 1971351427}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8158868008590715965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862624285412508587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9fedee444212c64bb124b8dc328e970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  furniturePrefab: {fileID: 5101328100761483451, guid: 963351ae6a38c174baa8ca56d78a2989, type: 3}
+  furniturePreviewPrefab: {fileID: 5101328100761483451, guid: 55f4bdffae94be64d9aae298f0ebc2dd, type: 3}
+  meshLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  leftHand: {fileID: 818654676}
+  rightHand: {fileID: 1971351427}
+  trackingRadius: 5
+  placeDownSFX: {fileID: 2091660272685169092}
+  pickUpSFX: {fileID: 4645121620484439493}
+  debugDraw: 1
 --- !u!1 &8381489891568862186
 GameObject:
   m_ObjectHideFlags: 0
