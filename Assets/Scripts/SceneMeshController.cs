@@ -10,7 +10,6 @@ public class SceneMeshController : MonoBehaviour
 
     public void OnSceneMeshLoaded()
     {
-        Debug.Log("Testing");
         GameObject[] meshObjects = GameObject.FindGameObjectsWithTag("GlobalMesh");
         foreach(var meshObject in meshObjects)
         {

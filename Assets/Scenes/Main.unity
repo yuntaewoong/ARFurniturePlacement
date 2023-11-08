@@ -864,6 +864,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3689272502570438787, guid: 40b50a39262f92041b64df7a26713d2b, type: 3}
+      propertyPath: furnitureSpawner
+      value: 
+      objectReference: {fileID: 8158868008590715965}
     - target: {fileID: 7063173589045947730, guid: 40b50a39262f92041b64df7a26713d2b, type: 3}
       propertyPath: m_Name
       value: LeftHandUI
@@ -1102,17 +1106,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9fedee444212c64bb124b8dc328e970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  furniturePrefab: {fileID: 4682204288190172177, guid: 3a1ca38717a31a849b9ab3ef82597695, type: 3}
-  furniturePreviewPrefab: {fileID: 4682204288190172177, guid: 7ed24f5ae2110cb4f8c15ff3074126ba, type: 3}
+  furniturePrefabs:
+  - {fileID: 5101328100761483451, guid: 963351ae6a38c174baa8ca56d78a2989, type: 3}
+  - {fileID: 4682204288190172177, guid: 3a1ca38717a31a849b9ab3ef82597695, type: 3}
+  furniturePreviewPrefabs:
+  - {fileID: 5101328100761483451, guid: 55f4bdffae94be64d9aae298f0ebc2dd, type: 3}
+  - {fileID: 4682204288190172177, guid: 7ed24f5ae2110cb4f8c15ff3074126ba, type: 3}
+  furnitureSprites:
+  - {fileID: 21300000, guid: 92a11b16c3dbfdb44ba29d3b7b5dd78a, type: 3}
+  - {fileID: 21300000, guid: b72ba2788a0d5ab40b8aeaf35e0360f4, type: 3}
   meshLayerMask:
     serializedVersion: 2
     m_Bits: 64
   leftHand: {fileID: 818654676}
   rightHand: {fileID: 1971351427}
-  trackingRadius: 5
   placeDownSFX: {fileID: 2091660272685169092}
   pickUpSFX: {fileID: 4645121620484439493}
-  debugDraw: 1
 --- !u!1 &8381489891568862186
 GameObject:
   m_ObjectHideFlags: 0
