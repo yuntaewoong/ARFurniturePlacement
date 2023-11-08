@@ -61,6 +61,7 @@ public class FurnitureSpawner : MonoBehaviour
 
     private void Update()
     {
+        UpdatePlacingFurniture();
         var togglePlacement = false;
         const OVRInput.Button buttonMask = OVRInput.Button.PrimaryIndexTrigger | OVRInput.Button.PrimaryHandTrigger;
 
@@ -118,6 +119,18 @@ public class FurnitureSpawner : MonoBehaviour
             placeDownSFX.PlaySfxAtPosition(point);
 
             _isPlaceds[leftHandUI.GetFurnitureIndex()] = true;
+        }
+    }
+    private void UpdatePlacingFurniture()
+    {
+        int furnitureIndex = leftHandUI.GetFurnitureIndex();
+        for (int i = 0; i < furniturePrefabs.Length; i++)
+        {
+            _furniturePreviews[i].SetActive(false);
+        }
+        if (!_isPlaceds[furnitureIndex])
+        {
+            _furniturePreviews[furnitureIndex].SetActive(true);
         }
     }
 

@@ -9,7 +9,8 @@ public class LeftHandUI : MonoBehaviour
     
     private int furnitureIndex = 0;
     private Image itemImage;
-
+    private int IndexSelectingDelayFrame = 30;//과도하게 index가 스위칭되는 현상해결용 해당 프레임이 지나야지 다음 인풋 허용
+    private int FrameCounter = 0;
     public int GetFurnitureIndex()
     {
         return furnitureIndex;
@@ -17,6 +18,7 @@ public class LeftHandUI : MonoBehaviour
 
     private void Start()
     {
+        FrameCounter = IndexSelectingDelayFrame;
         Image[] images = GetComponentsInChildren<Image>();
         foreach(var image in images)
         {
@@ -29,17 +31,19 @@ public class LeftHandUI : MonoBehaviour
     }
     private void Update()
     {
-        if(OVRInput.Get(OVRInput.Touch.SecondaryThumbstick))
-        {
-            Vector2 thumbstick = OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick);//left stick
-            if(thumbstick.x < 0)
-            {//left stick input process
-                furnitureIndex = (furnitureIndex - 1) % furnitureSpawner.GetFurnitureNum();
-            }
-            else if(thumbstick.x > 0)
-            {//right stick input process
-                furnitureIndex = (furnitureIndex + 1) % furnitureSpawner.GetFurnitureNum();
-            }
+        FrameCounter--;
+        Vector2 thumbstick = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);//left stick
+        if(thumbstick.x < 0 && FrameCounter < 0)
+        {//left stick input process
+            furnitureIndex--;
+            if (furnitureIndex == -1)
+                furnitureIndex = (furnitureSpawner.GetFurnitureNum()-1);
+            FrameCounter = IndexSelectingDelayFrame;
+        }
+        else if(thumbstick.x > 0 && FrameCounter < 0)
+        {//right stick input process
+            furnitureIndex = (furnitureIndex + 1) % furnitureSpawner.GetFurnitureNum();
+            FrameCounter = IndexSelectingDelayFrame;
         }
         UpdateItemImage();
     }

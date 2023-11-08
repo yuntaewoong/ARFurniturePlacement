@@ -382,6 +382,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraRigPrefab: {fileID: 74614887539166312, guid: 98c79d9a1553b471791e1e2e2e42b7a7, type: 3}
+--- !u!114 &1922790850 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3689272502570438787, guid: 40b50a39262f92041b64df7a26713d2b, type: 3}
+  m_PrefabInstance: {fileID: 4950809589758365953}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 071105158e81d0b448ed1897f0c01bcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1971351426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,6 +1117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9fedee444212c64bb124b8dc328e970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leftHandUI: {fileID: 1922790850}
   furniturePrefabs:
   - {fileID: 5101328100761483451, guid: 963351ae6a38c174baa8ca56d78a2989, type: 3}
   - {fileID: 4682204288190172177, guid: 3a1ca38717a31a849b9ab3ef82597695, type: 3}
@@ -1113,8 +1125,8 @@ MonoBehaviour:
   - {fileID: 5101328100761483451, guid: 55f4bdffae94be64d9aae298f0ebc2dd, type: 3}
   - {fileID: 4682204288190172177, guid: 7ed24f5ae2110cb4f8c15ff3074126ba, type: 3}
   furnitureSprites:
-  - {fileID: 21300000, guid: 92a11b16c3dbfdb44ba29d3b7b5dd78a, type: 3}
-  - {fileID: 21300000, guid: b72ba2788a0d5ab40b8aeaf35e0360f4, type: 3}
+  - {fileID: 21300000, guid: 930d3fc347590fa499b436e62e22e30e, type: 3}
+  - {fileID: 21300000, guid: fb2f42527d41eaf40b381937b22747f2, type: 3}
   meshLayerMask:
     serializedVersion: 2
     m_Bits: 64
