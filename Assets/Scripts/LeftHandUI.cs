@@ -9,7 +9,7 @@ public class LeftHandUI : MonoBehaviour
     
     private int furnitureIndex = 0;
     private Image itemImage;
-    private int IndexSelectingDelayFrame = 30;//과도하게 index가 스위칭되는 현상해결용 해당 프레임이 지나야지 다음 인풋 허용
+    private int IndexSelectingDelayFrame = 30;//과도하게 index가 스위칭되는 현상해결용 해당 프레임수가 지나야지 다음 인풋 허용
     private int FrameCounter = 0;
     public int GetFurnitureIndex()
     {
