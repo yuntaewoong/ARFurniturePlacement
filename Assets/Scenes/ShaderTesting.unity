@@ -149,7 +149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5454236636538902187, guid: 3a1ca38717a31a849b9ab3ef82597695, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.7001596
+      value: -0.727
       objectReference: {fileID: 0}
     - target: {fileID: 5454236636538902187, guid: 3a1ca38717a31a849b9ab3ef82597695, type: 3}
       propertyPath: m_LocalRotation.w
@@ -947,7 +947,7 @@ GameObject:
   - component: {fileID: 800692604}
   - component: {fileID: 800692603}
   - component: {fileID: 800692602}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: book
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1049,8 +1049,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 895774826}
-  m_Layer: 0
-  m_Name: DeskMesh
+  m_Layer: 6
+  m_Name: DeskMesh(PassthroughMaterial)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1091,7 +1091,7 @@ GameObject:
   - component: {fileID: 928640636}
   - component: {fileID: 928640635}
   - component: {fileID: 928640634}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1196,7 +1196,7 @@ GameObject:
   - component: {fileID: 969429986}
   - component: {fileID: 969429985}
   - component: {fileID: 969429984}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Leg_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1301,7 +1301,7 @@ GameObject:
   - component: {fileID: 991639420}
   - component: {fileID: 991639419}
   - component: {fileID: 991639418}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: book_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1405,7 +1405,7 @@ GameObject:
   - component: {fileID: 1282678255}
   - component: {fileID: 1282678257}
   - component: {fileID: 1282678256}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1489,7 +1489,7 @@ GameObject:
   - component: {fileID: 1414057940}
   - component: {fileID: 1414057939}
   - component: {fileID: 1414057938}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Leg_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1742,7 +1742,7 @@ Transform:
   m_GameObject: {fileID: 1497257240}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9698178, z: -0.24383074, w: 0}
-  m_LocalPosition: {x: 0.836, y: 2.097, z: 1.799}
+  m_LocalPosition: {x: 0.701, y: 2.097, z: 1.799}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1760,7 +1760,7 @@ GameObject:
   - component: {fileID: 1527382892}
   - component: {fileID: 1527382891}
   - component: {fileID: 1527382890}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Leg_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1971,7 +1971,7 @@ GameObject:
   - component: {fileID: 2011107927}
   - component: {fileID: 2011107926}
   - component: {fileID: 2011107925}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MiniLamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}

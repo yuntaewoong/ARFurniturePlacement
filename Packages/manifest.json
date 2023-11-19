@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.darktable.xrgizmos": "https://github.com/darktable/XRGizmos.git",
+    "com.meta.xr.depthapi": "https://github.com/oculus-samples/Unity-DepthAPI.git?path=/Packages/com.meta.xr.depthapi",
     "com.meta.xr.sdk.audio": "57.0.0-preview",
     "com.meta.xr.sdk.interaction.ovr": "57.0.0-preview",
     "com.meta.xr.sdk.utilities": "57.0.0-preview",
@@ -17,7 +18,7 @@
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.9.0",
     "com.unity.xr.management": "4.4.0",
-    "com.unity.xr.oculus": "4.0.0",
+    "com.unity.xr.oculus": "4.2.0-exp-env-depth.1",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
