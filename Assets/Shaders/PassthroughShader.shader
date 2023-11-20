@@ -8,6 +8,7 @@ Shader "Custom/PassthroughShader"
     {
         Tags { "RenderType" = "Opaque" }
         CGPROGRAM
+            #pragma multi_compile _ HARD_OCCLUSION SOFT_OCCLUSION
             #pragma surface surf Passthrough noambient alpha
 
             half4 LightingPassthrough (SurfaceOutput s, half3 lightDir, half atten) 
@@ -26,7 +27,6 @@ Shader "Custom/PassthroughShader"
         {
             float2 uv_MainTex;
         };
-
         sampler2D _MainTex;
 
         void surf (Input IN, inout SurfaceOutput o) 

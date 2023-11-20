@@ -1194,12 +1194,18 @@ MonoBehaviour:
   furniturePrefabs:
   - {fileID: 5101328100761483451, guid: 963351ae6a38c174baa8ca56d78a2989, type: 3}
   - {fileID: 4682204288190172177, guid: 3a1ca38717a31a849b9ab3ef82597695, type: 3}
+  - {fileID: 6622002846655365949, guid: c9709999e7c3cb541821f5810e586ecf, type: 3}
+  - {fileID: 6622002846655365949, guid: 218b7449efb17f0419bfa36eb056d982, type: 3}
   furniturePreviewPrefabs:
   - {fileID: 5101328100761483451, guid: 55f4bdffae94be64d9aae298f0ebc2dd, type: 3}
   - {fileID: 4682204288190172177, guid: 7ed24f5ae2110cb4f8c15ff3074126ba, type: 3}
+  - {fileID: 6622002846655365949, guid: c713c20548fa54043bb16d0e382eddf9, type: 3}
+  - {fileID: 6622002846655365949, guid: f7e9ce867568c3b4182aac192c2e2649, type: 3}
   furnitureSprites:
   - {fileID: 21300000, guid: 930d3fc347590fa499b436e62e22e30e, type: 3}
   - {fileID: 21300000, guid: fb2f42527d41eaf40b381937b22747f2, type: 3}
+  - {fileID: 21300000, guid: 8c870e22954d6dc468996015f856fbfa, type: 3}
+  - {fileID: 21300000, guid: 1ba646c4f2a61be42898f6246bf5b102, type: 3}
   meshLayerMask:
     serializedVersion: 2
     m_Bits: 64
