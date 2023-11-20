@@ -17,9 +17,7 @@ Shader "Custom/PassthroughShader"
                 half4 c;
                 c.rgb = s.Albedo * _LightColor0.rgb * (NdotL * atten);
                 
-                c.a = 0.0;
-                if(NdotL * atten > 0.1)
-                    c.a = 0.2;
+                c.a = NdotL * atten * 0.2;
                 return c;
             }
 
