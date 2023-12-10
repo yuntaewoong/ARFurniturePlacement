@@ -26,4 +26,4 @@ Amazon,IKEA등에서 제공하는 AR 가구 배치 서비스의 기능을 개선
 
 
 # 최종 논문
-[최종논문.pdf](https://github.com/yuntaewoong/ARFurniturePlacement/Paper/2018102213윤태웅_최종보고서.pdf)
+[최종논문.pdf](https://github.com/yuntaewoong/ARFurniturePlacement/tree/main/Paper/2018102213윤태웅_최종보고서.pdf)
