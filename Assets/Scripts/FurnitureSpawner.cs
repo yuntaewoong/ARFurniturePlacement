@@ -32,7 +32,6 @@ public class FurnitureSpawner : MonoBehaviour
     private (Vector3 point, Vector3 normal, bool hit) _leftHandHit;
     private (Vector3 point, Vector3 normal, bool hit) _rightHandHit;
 
-
     public int GetFurnitureNum()
     {
         return furniturePrefabs.Length;
@@ -85,6 +84,7 @@ public class FurnitureSpawner : MonoBehaviour
         _leftHandHit = (leftHit.point, leftHit.normal, leftRaySuccess);
         _rightHandHit = (rightHit.point, rightHit.normal, rightRaySuccess);
         var active = _activeController == OVRInput.Controller.LTouch ? _leftHandHit : _rightHandHit;
+        active.point += active.normal * 0.05f;
 
         if (togglePlacement && active.hit) TogglePlacement(active.point, active.normal);
 
@@ -113,6 +113,7 @@ public class FurnitureSpawner : MonoBehaviour
             var furnitureTransform = _furnitures[leftHandUI.GetFurnitureIndex()].transform;
             furnitureTransform.position = point;
             furnitureTransform.up = normal;
+            
 
             _furnitures[leftHandUI.GetFurnitureIndex()].SetActive(true);
             _furniturePreviews[leftHandUI.GetFurnitureIndex()].SetActive(false);
